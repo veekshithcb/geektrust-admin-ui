@@ -2,21 +2,14 @@
     margin-right: 40%;
     display: flex;
     gap: 15px;
-
 }
 
 .paginationBtn{
-    /* border:none;
-    border-radius: 50%;
-    background-color: rgb(27, 150, 216);
-    color: #fff;
-    padding: 0 1rem; */
     width: 2rem;
     height:  2rem;
- 
     border-radius: 50%;       
     background-color : rgb(27, 150, 216);
-    border: 2px solid rgb(27, 150, 216) ;  /* 2px thick solid red border */
+    border: 2px solid rgb(27, 150, 216) ;
     color: white ;    
     font-size: 16px;   
     cursor: pointer;   
@@ -26,13 +19,11 @@
 }
 
 .paginationBtnClicked{
-
     width: 2rem;
     height:  2rem;
- 
     border-radius: 50%;       
     background-color :white;
-    border: 2px solid rgb(27, 150, 216) ;  /* 2px thick solid red border */
+    border: 2px solid rgb(27, 150, 216) ;
     color: rgb(27, 150, 216) ;    
     font-size: 16px;   
     cursor: pointer;   

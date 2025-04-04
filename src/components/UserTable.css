@@ -1,0 +1,43 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 90%;
+    margin-left: 6rem;
+}
+
+.editInputField {
+    height: 30px;
+    outline: none;
+    border: 1px solid #da8383;
+    padding-left: 8px;
+    color:#325b97;
+    font-size: 1rem;
+}
+
+.editBtn {
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+    padding-right: 20px;
+    color: rgb(88, 88, 88);
+    cursor: pointer;
+}
+
+.saveBtn {
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+    padding-right: 20px;
+    color: rgb(14, 133, 20);
+    cursor: pointer;
+
+}
+
+.deleteBtn {
+    color: rgb(219, 91, 91);
+    background-color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+}

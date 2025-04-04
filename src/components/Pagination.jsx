@@ -7,7 +7,6 @@ const Pagination = ({ totalPosts, postPerPage, currentPage ,setCurrentPage ,clea
     let pages = [];
 
     pages.push('<<')
-
     pages.push('<')
 
     let totalPages  = Math.ceil(totalPosts / postPerPage);
@@ -18,8 +17,6 @@ const Pagination = ({ totalPosts, postPerPage, currentPage ,setCurrentPage ,clea
     pages.push('>')
     pages.push('>>')
 
-   
-
     return (
         <div className="pagination" >
             {
@@ -27,17 +24,17 @@ const Pagination = ({ totalPosts, postPerPage, currentPage ,setCurrentPage ,clea
                     return (
                         <button key={index} className={ page ==currentPage ? "paginationBtnClicked": "paginationBtn"} onClick={() => {
                             if (page === '<<') {
-                                setCurrentPage(1); // Go to first page
+                                setCurrentPage(1); 
                             } else if (page === '<') {
-                                setCurrentPage(prev => Math.max(1, prev - 1)); // Previous page
+                                setCurrentPage(prev => Math.max(1, prev - 1)); 
                             } else if (page === '>') {
-                                setCurrentPage(prev => Math.min(totalPages, prev + 1)); // Next page
+                                setCurrentPage(prev => Math.min(totalPages, prev + 1)); 
                             } else if (page === '>>') {
-                                setCurrentPage(totalPages); // Go to last page
+                                setCurrentPage(totalPages);
                             } else {
-                                setCurrentPage(page); // Go to the selected page
+                                setCurrentPage(page); 
                             }
-                            clearChecked(); // Clear selected checkboxes when changing pages
+                            clearChecked(); 
                         }} >{page}</button>
                     )
                 })
